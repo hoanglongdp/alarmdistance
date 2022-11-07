@@ -11,7 +11,7 @@ float Distance() {
   delay(10);
   digitalWrite(Trig, LOW);
   float duration = pulseIn(Echo, HIGH);
-  float distance = duration / 2.0 / 29.412;
+  float distance = duration / 2.0 * 0.034;
   return distance;
 }
 
